@@ -1,0 +1,52 @@
+<html>
+ <style>
+  p,input{
+   font-family:tahoma;
+   font-size:10pt;
+   color:red;
+   padding-top:0px;
+   padding-bottom:0px;
+  }
+  body{
+   background-color:#DFDFDF;
+   border-style:solid;
+   border-width:1px;width:300px;
+   border-color:red;
+   border-radius:5px;
+   padding:10px;
+   border-width:3px;
+  }
+  #resposta{
+   height:30px;
+   border-style:solid;
+   border-width:1px;
+   width:150px;
+   text-align:center;
+   font-size:18pt;
+   border-radius:5px;
+  }
+
+  </style>
+ <script>
+  function calculo() {
+   var a=parseFloat(document.fr.txtA.value);
+   var b=parseFloat(document.fr.txtB.value);
+   var s=(a+b);
+   document.getElementById("resposta").innerHTML="Soma= "+s;
+  }
+ </script>
+ <body>
+  <form name="fr">
+   <p> Digite A:
+   <p> 
+    <input type="text"  value="0" name="txtA">
+   </p>
+   <p> Digite B:
+   <p> <input type="text"  value="0" name="txtB">
+   </p>
+   <p> <input type="button" name="btncalcular" value="Calcular" onclick="calculo()">
+   </p>
+  </form>
+  <p id="resposta" >Resposta</p>
+ </body>
+</html>
