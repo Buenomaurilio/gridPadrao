@@ -3,7 +3,8 @@
     <head>
         <meta charset='uft-8'/>
         <title> Segunda Aula de Html</title>
-        <link rel="stylesheet" href="css/.css">    
+        <link rel="stylesheet" href="css/.css"> 
+          
     </head>
     <body>
         <div class="container" align="center">
@@ -17,7 +18,60 @@
                 <div class="footer" align="center">rodape</div>      
                 
             </main>
-            <aside>ASIDE</aside>
+            <aside>ASIDE
+                <div class="formCadastro">
+                    <h1>Cadastro</h1>
+                        <form action="/register" method="post" enctype="multipart/form-data">
+                            <div>
+                                <br><label class="required field" for="name" align="center">Name</label> 
+                                <input id="name"align="center">
+                            </div>
+                        
+                            <div>
+                                <br><label class="required field" align="left">Gender</label>
+                                <label>
+                                        <input type="radio" name="gender"value="male"> Masculino</label>
+                                <label><input type="radio" name="gender" value="female"> Feminino</label>
+                            </div>
+                        
+                            <div>
+                                <br><label class="required field">Sistema Operacional</label>
+                                <select id="SO">
+                                    <option value="windows">   Windows 10    </option>
+                                    <option value="macos">Mac OS</option>
+                                    <option value="linux">Linux</option>
+                                    <option value="other">Other ...</option>
+                                </select>
+                        
+                            </div>
+                            <div>
+                                <br><label class="field">Equipamento:</label>
+                                    <label>
+                                        <input type="checkbox" name="toy" value="digicam"> Camera Digital
+                                    </label>
+                        
+                                    <label>
+                                        <input type="checkbox" name="toy" value="phone"> Smartphone</label>
+                        
+                                    <label><input type="checkbox" name="toy" value="tablet"> Tablet</label>
+                            </div>
+                            <div>
+                               <br> <label class="field" for="portrait">Foto</label>
+                                    <input type="file" id="portrait">
+                            </div>
+                        
+                            <div>
+                                <br><label class="field" for="bio" align="center">Sobre você:</label>
+                                    <br><textarea id="bio" rows="6" cols="55" align="center"></textarea>
+                            </div>
+                        
+                            <div class="submit">
+                                <input type="submit" value="Submeter cadastro">
+                            </div>
+                        </form>
+                    </div>
+
+            </aside>
             <footer> <p>FOOTER</p> </footer>
         </div>
     </body>

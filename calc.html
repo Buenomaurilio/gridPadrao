@@ -1,52 +1,65 @@
-<html>
- <style>
-  p,input{
-   font-family:tahoma;
-   font-size:10pt;
-   color:red;
-   padding-top:0px;
-   padding-bottom:0px;
-  }
-  body{
-   background-color:#DFDFDF;
-   border-style:solid;
-   border-width:1px;width:300px;
-   border-color:red;
-   border-radius:5px;
-   padding:10px;
-   border-width:3px;
-  }
-  #resposta{
-   height:30px;
-   border-style:solid;
-   border-width:1px;
-   width:150px;
-   text-align:center;
-   font-size:18pt;
-   border-radius:5px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cadastro.css">
+    
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="formCadastro">
+        <h1>Cadastro</h1>
+            <form action="/register" method="post" enctype="multipart/form-data">
+                <div>
+                    <br><label class="required field" for="name" align="center">Name</label> 
+                    <input id="name"align="center">
+                </div>
+            
+                <div>
+                    <br><label class="required field" align="left">Gender</label>
+                    <label>
+                            <input type="radio" name="gender"value="male"> Masculino</label>
+                    <label><input type="radio" name="gender" value="female"> Feminino</label>
+                </div>
+            
+                <div>
+                    <br><label class="required field">Sistema Operacional</label>
+                    <select id="SO">
+                        <option value="windows">   Windows 10    </option>
+                        <option value="macos">Mac OS</option>
+                        <option value="linux">Linux</option>
+                        <option value="other">Other ...</option>
+                    </select>
+            
+                </div>
+                <div>
+                    <br><label class="field">Equipamento:</label>
+                        <label>
+                            <input type="checkbox" name="toy" value="digicam"> Camera Digital
+                        </label>
+            
+                        <label>
+                            <input type="checkbox" name="toy" value="phone"> Smartphone</label>
+            
+                        <label><input type="checkbox" name="toy" value="tablet"> Tablet</label>
+                </div>
+                <div>
+                   <br> <label class="field" for="portrait">Foto</label>
+                        <input type="file" id="portrait">
+                </div>
+            
+                <div>
+                    <br><label class="field" for="bio" align="center">Sobre você:</label>
+                        <br><textarea id="bio" rows="6" cols="55" align="center"></textarea>
+                </div>
+            
+                <div class="submit">
+                    <input type="submit" value="Submeter cadastro">
+                </div>
+            </form>
+        </div>
+    </body>
 
-  </style>
- <script>
-  function calculo() {
-   var a=parseFloat(document.fr.txtA.value);
-   var b=parseFloat(document.fr.txtB.value);
-   var s=(a+b);
-   document.getElementById("resposta").innerHTML="Soma= "+s;
-  }
- </script>
- <body>
-  <form name="fr">
-   <p> Digite A:
-   <p> 
-    <input type="text"  value="0" name="txtA">
-   </p>
-   <p> Digite B:
-   <p> <input type="text"  value="0" name="txtB">
-   </p>
-   <p> <input type="button" name="btncalcular" value="Calcular" onclick="calculo()">
-   </p>
-  </form>
-  <p id="resposta" >Resposta</p>
- </body>
 </html>
