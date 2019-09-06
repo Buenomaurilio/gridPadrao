@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="configLogin.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Grid Login</title>
+        
     </head>
 <body> 
 
@@ -22,10 +24,11 @@
                         <label></label><br>
                             <input type="text" 
                                 maxlength="10"
-                                placeholder="nome de usuario"
+                                placeholder="@username"
                                 name="user"
                                 size="10"
-                                required/><br>
+                                required
+                                class="input pull-left"/><br>
                                 
                         <label></label><br>
 
@@ -37,10 +40,13 @@
                                 required/><br><br>
                                 
                         <input type="submit"
-                                value="Enviar"/>
+                                value="Enviar"
+                                class="btn btn-warning"/>
+                                
 
                         <input type="reset"
-                                value="Limpar"/>
+                                value="Limpar"
+                                class="btn btn-warning"/>
                 </form>
         </section>
 
