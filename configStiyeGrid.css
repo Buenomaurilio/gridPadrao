@@ -4,11 +4,10 @@ html, body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color:yellowgreen; 
+    background-color:rgb(143, 238, 245); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
- 
+
 .container{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -23,14 +22,17 @@ header{
 
 }
 main{
+  /*background: white;*/
   grid-column: 2/3;
   grid-row: 2/3;
-  display: center; 
-  margin-left: auto; 
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  /*
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  */
 }
+
 nav{
   background-color: rgb(87, 87, 243);
   grid-column: 1/2;
