@@ -12,31 +12,29 @@
     <main>
 
         <section class="grid-container">
-
-            <div class="cx-1"></div>
-            <div class="cx-2"></div>
-            <div class="cx-3"> 
+            <div class="cx-1"> 
                 <h1 align="center">Bem vindo a IoTontosBr</h1>
                 <h2 align="center">Realize seu login</h2>
                 <form name="Login"
                     action="login.py" 
-                    method="POST">
-                        <label>Nome de Usuario</label><br>
+                    method="POST" 
+                    align="center">
+                        <label></label><br>
                             <input type="text" 
                                 maxlength="10"
-                                placeholder="@xpto"
+                                placeholder="nome de usuario"
                                 name="user"
-                                size="15"
+                                size="10"
                                 required/><br>
                                 
-                        <label>Senha: </label><br>
+                        <label></label><br>
 
                         <input type="password"
                                 maxlength="10" 
-                                placeholder="Ex: abcd@#1234"
+                                placeholder="password"
                                 name="user"
-                                size="15"
-                                required/><br>
+                                size="10"
+                                required/><br><br>
                                 
                         <input type="submit"
                                 value="Enviar"/>
@@ -44,11 +42,6 @@
                         <input type="reset"
                                 value="Limpar"/>
                 </form>
-
-            </div>
-            <div class="cx-4"></div>
-            <div class="cx-5"></div>
-
         </section>
 
     </main>
